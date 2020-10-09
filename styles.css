@@ -1,0 +1,157 @@
+
+
+*,
+*::after,
+*::before {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "open sans";
+}
+
+:root {
+    --bgc-card: rgb(73, 30, 83);
+    --second-color: rgb(204, 78, 206);
+    --third-color:rgb(248, 239, 245);
+    --paragraph-color:rgb(153, 134, 134);
+}
+
+.card__profile > img {
+    max-width:100%;
+    height:auto;
+    border-radius: 50%;
+}
+
+.main {
+    width:70%;
+    margin:10rem auto;
+    padding:5rem;
+    border-radius: .5rem;
+    box-shadow: -3px 0px 20px -4px rgba(0,0,0,0.75);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "title stars"
+                         "cards cards";
+    
+                         
+}
+
+/* Primera seccion */
+
+.stars {
+    align-items: center;
+}
+
+.stars__item {
+    padding:1rem;
+    background-color: var(--third-color);
+    margin:1rem 0;
+    border-radius: .5rem;
+    width:80%;
+
+}
+
+.stars__item > p {
+    display: inline-block;
+    margin-left:2rem;   
+    font-weight: bold;
+    color:var(--bgc-card);
+}
+
+
+.title > h1 {
+    width:70%;
+    color:var(--bgc-card);
+    padding-bottom:1rem;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.title > p {
+    width:80%;
+    color:var(--paragraph-color);
+    line-height:1.5rem;
+}
+
+#stars2 {
+    transform:translateX(30px)
+}
+
+#stars3 {
+    transform:translateX(60px)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tarjetas */
+
+.title {
+    grid-area:title;
+}
+
+.stars {
+    grid-area:stars
+}
+
+.cards {
+    grid-area:cards;
+    display:flex;
+    justify-content: space-evenly;
+    padding-top:2rem;
+}
+
+.card {
+    margin-right:2rem;
+    background-color: var(--bgc-card);
+    padding:2rem;
+    border-radius: 1rem;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__profile {
+    display: flex;
+    align-items: center;
+}
+
+.card__information {
+    padding:1rem;
+}
+
+.information-name {
+    color:#fff;
+    font-weight: bold;
+}
+
+.information-buyer {
+    color:var(--second-color)
+}
+
+.card__comment {
+    padding:1rem;
+    color:#fff;
+    text-align: ;
+}
+
+#card1 {
+    transform:translateY(-20px);
+    margin-left:0;
+}
+#card3 {
+    transform:translateY(20px)
+}
+
